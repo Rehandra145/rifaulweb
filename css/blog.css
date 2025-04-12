@@ -1,0 +1,87 @@
+.bg-grid {
+  background-image: linear-gradient(to right, #f0f4f8 1px, transparent 1px),
+                    linear-gradient(to bottom, #f0f4f8 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.gradient-overlay {
+  background: radial-gradient(circle at center, transparent, white);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+.card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark .glassmorphism {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.meteor-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.meteor-dot {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: rgba(59, 130, 246, 0.7);
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgba(59, 130, 246, 0.3);
+  animation: meteor 10s linear infinite;
+  top: -10%;
+  left: 10%;
+  transform-origin: center center;
+}
+
+@keyframes meteor {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(300px, 300px) rotate(120deg) scale(0.2);
+    opacity: 0;
+  }
+}
+
+.media-icon {
+  transition: all 0.3s ease;
+}
+
+.media-icon:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full scroll-smooth" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistem Multimedia - Rifaul Khairunisa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="./css/blog.css">
+</head>
+<body class="relative font-sans">
+  <div class="absolute inset-0 -z-10 h-full w-full bg-grid"></div>
+  <div class="absolute inset-0 -z-5 gradient-overlay opacity-70"></div>
+  <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 h-full w-64 bg-gradient-to-b from-blue-500 to-sky-400 z-50 p-8 shadow-xl flex flex-col">
+    <div class="flex items-center mb-8">
+      <span class="bg-white text-blue-500 rounded-full w-8 h-8 flex items-center justify-center mr-2">R</span>
+      <span class="text-xl font-bold text-white">Rifaul Khairunisa</span>
+    </div>
+    <button id="closeMenu" class="absolute top-4 right-4 text-white text-xl" aria-label="Close menu">
+      <i class="ph ph-x"></i>
+    </button>
+    <ul class="flex flex-col space-y-4 text-lg font-medium text-white">
+      <li><a href="index.html#about" class="hover:text-blue-100 transition block py-2">About</a></li>
+      <li><a href="index.html#blog" class="hover:text-blue-100 transition block py-2">Blog</a></li>
+      <li><a href="index.html#categories" class="hover:text-blue-100 transition block py-2">Categories</a></li>
+      <li><a href="index.html#contact" class="hover:text-blue-100 transition block py-2">Contact</a></li>
+    </ul>
+    <div class="mt-6 py-4 border-t border-blue-400">
+      <button id="mobileThemeToggle" class="flex items-center text-white space-x-2" aria-label="Toggle dark mode">
+        <i class="ph ph-sun text-xl theme-icon-mobile"></i>
+        <span class="theme-text-mobile">Dark Mode</span>
+      </button>
+    </div>
+    <div class="mt-auto pt-4 border-t border-blue-400">
+      <div class="flex space-x-4 text-white">
+        <a href="https://instagram.com/" target="_blank" class="hover:text-blue-100" aria-label="Instagram">
+          <i class="ph ph-instagram-logo text-xl"></i>
+        </a>
+        <a href="https://github.com/" target="_blank" class="hover:text-blue-100" aria-label="GitHub">
+          <i class="ph ph-github-logo text-xl"></i>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" class="hover:text-blue-100" aria-label="LinkedIn">
+          <i class="ph ph-linkedin-logo text-xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="flex justify-between items-center px-4 sm:px-8 py-4 bg-gradient-to-r from-blue-500 to-sky-400 text-white shadow-lg sticky top-0 z-40">
+    <div class="text-xl sm:text-2xl font-bold flex items-center">
+      <a href="index.html" class="flex items-center">
+        <span class="bg-white text-blue-500 rounded-full w-8 h-8 flex items-center justify-center mr-2">R</span>
+        Rifaul Khairunisa
+      </a>
+    </div>
+    <div class="hidden md:flex space-x-6 text-lg font-medium">
+      <a href="index.html#about" class="hover:text-blue-100 transition">About</a>
+      <a href="index.html#blog" class="hover:text-blue-100 transition">Blog</a>
+      <a href="index.html#categories" class="hover:text-blue-100 transition">Categories</a>
+      <a href="index.html#contact" class="hover:text-blue-100 transition">Contact</a>
+    </div>
+    <div class="flex items-center space-x-4">
+      <button id="themeToggle" class="hidden md:flex items-center justify-center w-8 h-8 bg-white bg-opacity-20 rounded-full theme-toggle" aria-label="Toggle dark mode">
+        <i class="ph ph-sun text-white theme-icon"></i>
+      </button>
+      <button id="menuButton" class="md:hidden text-2xl focus:outline-none" aria-label="Open menu">
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="py-10 md:py-16 px-4 max-w-5xl mx-auto">
+    <div class="flex items-center text-xs md:text-sm text-gray-500 mb-4">
+      <a href="index.html" class="hover:text-blue-500">Home</a>
+      <span class="mx-2">›</span>
+      <a href="index.html#blog" class="hover:text-blue-500">Blog</a>
+      <span class="mx-2">›</span>
+      <span class="text-blue-500">Sistem Multimedia</span>
+    </div>
+    
+    <div class="glassmorphism rounded-xl shadow-xl overflow-hidden mb-10">
+      <div class="relative">
+        <img src="./assets/tmb2.png" alt="Multimedia Systems thumbnail" class="w-full h-40 md:h-64 object-cover">
+        <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-2 py-1 m-4 rounded">Multimedia</div>
+      </div>
+      
+      <div class="p-6 md:p-8">
+        <h1 class="text-2xl md:text-3xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
+          Sistem Multimedia: Komponen, Jenis, dan Aplikasi
+        </h1>
+        
+        <div class="flex items-center text-sm text-gray-500 mb-6">
+          <div class="flex items-center mr-4">
+            <i class="ph ph-calendar text-blue-500 mr-1"></i>
+            <span>13 April 2025</span>
+          </div>
+          <div class="flex items-center">
+            <i class="ph ph-user text-blue-500 mr-1"></i>
+            <span>Rifaul Khairunisa</span>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-4 mb-8">
+          <div class="media-icon flex items-center justify-center w-16 h-16 rounded-lg shadow-md bg-gradient-to-br from-purple-400 to-purple-600 text-white">
+            <i class="ph ph-text-t text-3xl"></i>
+          </div>
+          <div class="media-icon flex items-center justify-center w-16 h-16 rounded-lg shadow-md bg-gradient-to-br from-blue-400 to-blue-600 text-white">
+            <i class="ph ph-image text-3xl"></i>
+          </div>
+          <div class="media-icon flex items-center justify-center w-16 h-16 rounded-lg shadow-md bg-gradient-to-br from-green-400 to-green-600 text-white">
+            <i class="ph ph-speaker-high text-3xl"></i>
+          </div>
+          <div class="media-icon flex items-center justify-center w-16 h-16 rounded-lg shadow-md bg-gradient-to-br from-red-400 to-red-600 text-white">
+            <i class="ph ph-video text-3xl"></i>
+          </div>
+          <div class="media-icon flex items-center justify-center w-16 h-16 rounded-lg shadow-md bg-gradient-to-br from-yellow-400 to-yellow-600 text-white">
+            <i class="ph ph-game-controller text-3xl"></i>
+          </div>
+        </div>
+        
+        <div class="prose max-w-none mb-8">
+          <p class="mb-4">
+            Sistem Multimedia merupakan salah satu mata kuliah penting dalam program studi Teknik Informatika yang membahas integrasi berbagai jenis media digital seperti teks, gambar, audio, video, dan animasi. Materi ini sangat relevan di era digital, di mana aplikasi dan platform multimedia telah menjadi bagian integral dari kehidupan sehari-hari.
+          </p>
+          <p class="mb-4">
+            Untuk memahami lebih jauh tentang Sistem Multimedia, silakan baca materi PDF berikut yang membahas komponen, jenis, dan aplikasi multimedia dalam dunia teknologi informasi:
+          </p>
+        </div>
+        
+        <div class="glassmorphism rounded-lg overflow-hidden shadow-lg mb-8">
+          <div class="bg-gray-100 py-2 px-4 border-b flex items-center">
+            <i class="ph ph-file-pdf text-red-500 mr-2"></i>
+            <span class="font-medium">Sistem_Multimedia_Komprehensif.pdf</span>
+          </div>
+          <div class="p-4 flex justify-center items-center">
+            <iframe src="./assets/Rifaul Khairunnisa_Sistem Multimedia.pdf" class="w-full h-96 border-0" title="Sistem Multimedia PDF"></iframe>
+          </div>
+        </div>
+        
+        <div class="prose max-w-none">
+          <h2 class="text-xl font-semibold mb-3">Elemen-elemen Sistem Multimedia</h2>
+          
+          <div class="mb-6">
+            <h3 class="text-lg font-medium mb-2 text-blue-600">1. Teks</h3>
+            <p class="mb-2">
+              Teks merupakan elemen dasar multimedia yang digunakan untuk menyampaikan informasi. Dalam sistem multimedia, teks dapat dimanipulasi dengan berbagai cara termasuk:
+            </p>
+            <ul class="list-disc pl-5 mb-0">
+              <li>Pemformatan (ukuran, warna, jenis font)</li>
+              <li>Animasi teks</li>
+              <li>Hypertext - teks yang terhubung ke informasi lain</li>
+            </ul>
+          </div>
+          
+          <div class="mb-6">
+            <h3 class="text-lg font-medium mb-2 text-blue-600">2. Gambar</h3>
+            <p class="mb-2">
+              Gambar dalam multimedia mencakup foto, ilustrasi, grafik, dan representasi visual lainnya. Beberapa aspek penting gambar dalam multimedia:
+            </p>
+            <ul class="list-disc pl-5 mb-0">
+              <li>Format gambar (JPEG, PNG, GIF, SVG)</li>
+              <li>Resolusi dan kompresibilitas</li>
+              <li>Metode pemrosesan gambar</li>
+              <li>Gambar vektor vs raster</li>
+            </ul>
+          </div>
+          
+          <div class="mb-6">
+            <h3 class="text-lg font-medium mb-2 text-blue-600">3. Audio</h3>
+            <p class="mb-2">
+              Audio memberikan dimensi pendengaran dalam sistem multimedia. Elemen audio mencakup:
+            </p>
+            <ul class="list-disc pl-5 mb-0">
+              <li>Format audio (MP3, WAV, AAC, FLAC)</li>
+              <li>Teknik kompresi audio</li>
+              <li>Pengolahan sinyal audio</li>
+              <li>Integrasi audio dengan elemen multimedia lainnya</li>
+            </ul>
+          </div>
+          
+          <div class="mb-6">
+            <h3 class="text-lg font-medium mb-2 text-blue-600">4. Video</h3>
+            <p class="mb-2">
+              Video menggabungkan gambar bergerak dan audio untuk memberikan pengalaman yang lebih kaya. Aspek penting video dalam multimedia:
+            </p>
+            <ul class="list-disc pl-5 mb-0">
+              <li>Format video (MP4, AVI, MOV, WebM)</li>
+              <li>Standar kompresi video</li>
+              <li>Teknik pengeditan video</li>
+              <li>Streaming vs unduhan</li>
+              <li>Video interaktif</li>
+            </ul>
+          </div>
+          
+          <div class="mb-6">
+            <h3 class="text-lg font-medium mb-2 text-blue-600">5. Animasi</h3>
+            <p class="mb-2">
+              Animasi adalah simulasi gerakan yang dibuat dengan menampilkan serangkaian gambar atau frame. Aspek penting animasi:
+            </p>
+            <ul class="list-disc pl-5 mb-0">
+              <li>Jenis animasi (2D, 3D, Stop Motion)</li>
+              <li>Teknik animasi (frame-by-frame, tweening)</li>
+              <li>Animasi berbasis web (CSS, SVG, Canvas)</li>
+              <li>Animasi interaktif dan responsif</li>
+            </ul>
+          </div>
+          
+          <h2 class="text-xl font-semibold mt-8 mb-3">Aplikasi Sistem Multimedia</h2>
+          <p class="mb-4">
+            Sistem multimedia memiliki berbagai aplikasi dalam kehidupan modern, seperti:
+          </p>
+          <ul class="list-disc pl-5 mb-4">
+            <li>Pendidikan dan e-Learning</li>
+            <li>Hiburan (game, film, musik)</li>
+            <li>Komunikasi (video conference, sosial media)</li>
+            <li>Pemasaran dan periklanan digital</li>
+            <li>Simulasi dan realitas virtual</li>
+            <li>Medis (visualisasi 3D, telemedicine)</li>
+          </ul>
+          
+          <p class="mb-4">
+            Dengan perkembangan teknologi yang semakin pesat, batasan-batasan antar elemen multimedia semakin kabur dan integrasi antar elemen semakin seamless, menciptakan pengalaman yang semakin imersif dan interaktif bagi pengguna.
+          </p>
+        </div>
+        
+        <div class="border-t mt-8 pt-6">
+          <h3 class="text-lg font-semibold mb-4">Artikel Terkait</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="#" class="glassmorphism rounded-lg p-4 flex items-center hover:shadow-md transition">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                <i class="ph ph-camera text-blue-500"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-sm">Pengolahan Citra Digital</h4>
+                <p class="text-xs text-gray-500">Teknik manipulasi dan analisis gambar</p>
+              </div>
+            </a>
+            <a href="#" class="glassmorphism rounded-lg p-4 flex items-center hover:shadow-md transition">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                <i class="ph ph-film-strip text-blue-500"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-sm">Dasar-dasar Video Editing</h4>
+                <p class="text-xs text-gray-500">Panduan membuat dan mengedit video</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex justify-between items-center">
+      <a href="index.html#blog" class="inline-flex items-center text-blue-500 font-medium hover:text-blue-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+        Kembali ke Semua Blog
+      </a>
+      <div class="flex space-x-2">
+        <a href="#" class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 hover:bg-blue-500 hover:text-white transition">
+          <i class="ph ph-share-network text-sm"></i>
+        </a>
+        <a href="#" class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 hover:bg-blue-500 hover:text-white transition">
+          <i class="ph ph-bookmark-simple text-sm"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-6 md:py-8 px-4 md:px-6 bg-gradient-to-r from-blue-600 to-sky-500 text-white">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0 text-center md:text-left">
+        <div class="text-xl font-bold mb-2 flex items-center justify-center md:justify-start">
+          <span class="bg-white text-blue-500 rounded-full w-8 h-8 flex items-center justify-center mr-2">R</span>
+          Rifaul Khairunisa
+        </div>
+        <p class="text-blue-100">© 2025 Rifaul Khairunisa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/blog.js"></script>
+</body>
+</html>
