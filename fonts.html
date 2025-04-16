@@ -14,23 +14,13 @@
       scroll-behavior: smooth;
     }
 
-    .font-section {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .font-item {
+      padding: 1rem 0;
+      border-bottom: 1px solid #e5e7eb;
     }
 
-    .back-to-blog {
-      position: fixed;
-      bottom: 2rem;
-      right: 2rem;
-      z-index: 50;
-      transition: transform 0.2s;
-    }
-
-    .back-to-blog:hover {
-      transform: scale(1.05);
+    .font-item:last-child {
+      border-bottom: none;
     }
   </style>
 </head>
@@ -38,7 +28,7 @@
   <div class="absolute inset-0 -z-10 h-full w-full bg-grid"></div>
   <div class="absolute inset-0 -z-5 gradient-overlay opacity-70"></div>
 
-  <!-- Navigation (same as blog.html) -->
+  <!-- Navigation -->
   <nav class="flex justify-between items-center px-4 sm:px-8 py-4 bg-gradient-to-r from-blue-500 to-sky-400 text-white shadow-lg sticky top-0 z-40">
     <div class="text-xl sm:text-2xl font-bold">
       <a href="index.html" class="flex items-center">
@@ -49,90 +39,60 @@
     <a href="blog.html" class="hover:text-blue-100 transition">Back to Blog</a>
   </nav>
 
-  <!-- Times New Roman Section -->
-  <section id="times-new-roman" class="font-section">
-    <div class="glassmorphism p-8 rounded-xl text-center">
-      <h2 class="text-3xl mb-4" style="font-family: 'Times New Roman', serif;">Times New Roman</h2>
-      <p class="text-xl" style="font-family: 'Times New Roman', serif;">Ini font Times New Roman</p>
-    </div>
-  </section>
+  <!-- Font List Container -->
+  <div class="container mx-auto px-4 py-8 max-w-3xl">
+    <h1 class="text-3xl font-bold mb-8 text-center">Font Showcase</h1>
+    
+    <div class="bg-white rounded-lg shadow-sm p-6">
+      <div id="times-new-roman" class="font-item">
+        <p class="text-xl" style="font-family: 'Times New Roman', serif;">Rifaul Khairunisa - Times New Roman</p>
+      </div>
 
-  <!-- Arial Section -->
-  <section id="arial" class="font-section">
-    <div class="glassmorphism p-8 rounded-xl text-center">
-      <h2 class="text-3xl mb-4" style="font-family: Arial, sans-serif;">Arial</h2>
-      <p class="text-xl" style="font-family: Arial, sans-serif;">Ini font Arial</p>
-    </div>
-  </section>
+      <div id="arial" class="font-item">
+        <p class="text-xl" style="font-family: Arial, sans-serif;">Rifaul Khairunisa - Arial</p>
+      </div>
 
-  <!-- Calibri Section -->
-  <section id="calibri" class="font-section">
-    <div class="glassmorphism p-8 rounded-xl text-center">
-      <h2 class="text-3xl mb-4" style="font-family: Calibri, sans-serif;">Calibri</h2>
-      <p class="text-xl" style="font-family: Calibri, sans-serif;">Ini font Calibri</p>
-    </div>
-  </section>
+      <div id="calibri" class="font-item">
+        <p class="text-xl" style="font-family: Calibri, sans-serif;">Rifaul Khairunisa - Calibri</p>
+      </div>
 
-  <!-- Verdana Section -->
-  <section id="verdana" class="font-section">
-    <div class="glassmorphism p-8 rounded-xl text-center">
-      <h2 class="text-3xl mb-4" style="font-family: Verdana, sans-serif;">Verdana</h2>
-      <p class="text-xl" style="font-family: Verdana, sans-serif;">Ini font Verdana</p>
-    </div>
-  </section>
+      <div id="verdana" class="font-item">
+        <p class="text-xl" style="font-family: Verdana, sans-serif;">Rifaul Khairunisa - Verdana</p>
+      </div>
 
-  <!-- Georgia Section -->
-  <section id="georgia" class="font-section">
-    <div class="glassmorphism p-8 rounded-xl text-center">
-      <h2 class="text-3xl mb-4" style="font-family: Georgia, serif;">Georgia</h2>
-      <p class="text-xl" style="font-family: Georgia, serif;">Ini font Georgia</p>
-    </div>
-  </section>
+      <div id="georgia" class="font-item">
+        <p class="text-xl" style="font-family: Georgia, serif;">Rifaul Khairunisa - Georgia</p>
+      </div>
 
-  <!-- Helvetica Section -->
-  <section id="helvetica" class="font-section">
-    <div class="glassmorphism p-8 rounded-xl text-center">
-      <h2 class="text-3xl mb-4" style="font-family: Helvetica, sans-serif;">Helvetica</h2>
-      <p class="text-xl" style="font-family: Helvetica, sans-serif;">Ini font Helvetica</p>
-    </div>
-  </section>
+      <div id="helvetica" class="font-item">
+        <p class="text-xl" style="font-family: Helvetica, sans-serif;">Rifaul Khairunisa - Helvetica</p>
+      </div>
 
-  <!-- Cambria Section -->
-  <section id="cambria" class="font-section">
-    <div class="glassmorphism p-8 rounded-xl text-center">
-      <h2 class="text-3xl mb-4" style="font-family: Cambria, serif;">Cambria</h2>
-      <p class="text-xl" style="font-family: Cambria, serif;">Ini font Cambria</p>
-    </div>
-  </section>
+      <div id="cambria" class="font-item">
+        <p class="text-xl" style="font-family: Cambria, serif;">Rifaul Khairunisa - Cambria</p>
+      </div>
 
-  <!-- JetBrains Mono Section -->
-  <section id="jetbrains-mono" class="font-section">
-    <div class="glassmorphism p-8 rounded-xl text-center">
-      <h2 class="text-3xl mb-4" style="font-family: 'JetBrains Mono', monospace;">JetBrains Mono</h2>
-      <p class="text-xl" style="font-family: 'JetBrains Mono', monospace;">Ini font JetBrains Mono</p>
-    </div>
-  </section>
+      <div id="jetbrains-mono" class="font-item">
+        <p class="text-xl" style="font-family: 'JetBrains Mono', monospace;">Rifaul Khairunisa - JetBrains Mono</p>
+      </div>
 
-  <!-- Montserrat Section -->
-  <section id="montserrat" class="font-section">
-    <div class="glassmorphism p-8 rounded-xl text-center">
-      <h2 class="text-3xl mb-4" style="font-family: 'Montserrat', sans-serif;">Montserrat</h2>
-      <p class="text-xl" style="font-family: 'Montserrat', sans-serif;">Ini font Montserrat</p>
-    </div>
-  </section>
+      <div id="montserrat" class="font-item">
+        <p class="text-xl" style="font-family: 'Montserrat', sans-serif;">Rifaul Khairunisa - Montserrat</p>
+      </div>
 
-  <!-- Poppins Section -->
-  <section id="poppins" class="font-section">
-    <div class="glassmorphism p-8 rounded-xl text-center">
-      <h2 class="text-3xl mb-4" style="font-family: 'Poppins', sans-serif;">Poppins</h2>
-      <p class="text-xl" style="font-family: 'Poppins', sans-serif;">Ini font Poppins</p>
+      <div id="poppins" class="font-item">
+        <p class="text-xl" style="font-family: 'Poppins', sans-serif;">Rifaul Khairunisa - Poppins</p>
+      </div>
     </div>
-  </section>
+  </div>
 
   <!-- Back to Blog Button -->
-  <a href="blog.html" class="back-to-blog bg-gradient-to-r from-blue-500 to-sky-400 text-white px-4 py-2 rounded-full shadow-lg flex items-center">
+  <a href="blog.html" class="fixed bottom-8 right-8 bg-gradient-to-r from-blue-500 to-sky-400 text-white px-4 py-2 rounded-full shadow-lg flex items-center hover:scale-105 transition-transform">
     <i class="ph ph-arrow-left mr-2"></i>
     Kembali ke Blog
   </a>
 </body>
 </html>
+
+
+
